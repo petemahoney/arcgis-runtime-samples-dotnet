@@ -389,6 +389,9 @@
     <Compile Include="Samples\Symbology\AdvancedSymbology\S57DisplayPropertiesSample.xaml.cs">
       <DependentUpon>S57DisplayPropertiesSample.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Samples\Symbology\AdvancedSymbology\S57IdentifySample.xaml.cs">
+      <DependentUpon>S57IdentifySample.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Samples\Symbology\ClassBreaksRendererSample.xaml.cs">
       <DependentUpon>ClassBreaksRendererSample.xaml</DependentUpon>
     </Compile>
@@ -871,6 +874,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Samples\Symbology\AdvancedSymbology\S57DisplayPropertiesSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Symbology\AdvancedSymbology\S57IdentifySample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

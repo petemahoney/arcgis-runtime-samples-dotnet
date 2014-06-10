@@ -2085,6 +2085,22 @@
             InitializeComponent
             </summary>
         </member>
+        <member name="T:ArcGISRuntimeSDKDotNet_DesktopSamples.Samples.Symbology.AdvancedSymbology.S57IdentifySample">
+            <summary>
+            This sample demostrates how to perform a point-based identify style operation on an HydrographicS57Layer using the SearchLayer method.
+            </summary>
+            <title>S57 Identify</title>
+            <category>Symbology</category>
+            <subcategory>Advanced</subcategory>
+            <summary>
+            S57IdentifySample
+            </summary>
+        </member>
+        <member name="M:ArcGISRuntimeSDKDotNet_DesktopSamples.Samples.Symbology.AdvancedSymbology.S57IdentifySample.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
         <member name="T:ArcGISRuntimeSDKDotNet_DesktopSamples.Samples.ClassBreaksRendererSample">
             <summary>
             Sample shows how to create a ClassBreaksRenderer for a graphics layer. Earthquake data points are pulled from an online source and rendered using the GraphicsLayer ClassBreaksRenderer.

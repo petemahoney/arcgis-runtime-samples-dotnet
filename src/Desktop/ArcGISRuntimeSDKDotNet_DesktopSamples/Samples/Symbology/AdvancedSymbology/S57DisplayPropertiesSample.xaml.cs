@@ -1,15 +1,15 @@
 ﻿using Esri.ArcGISRuntime.Controls;
+using Esri.ArcGISRuntime.Geometry;
 using Esri.ArcGISRuntime.Layers;
 using System;
-using System.Globalization;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Markup;
-using Esri.ArcGISRuntime.Geometry;
 
 namespace ArcGISRuntimeSDKDotNet_DesktopSamples.Samples.Symbology.AdvancedSymbology
 {
@@ -40,11 +40,12 @@ namespace ArcGISRuntimeSDKDotNet_DesktopSamples.Samples.Symbology.AdvancedSymbol
 			Polygon extent = new Polygon();
 
 			// Create combined extent from child hydrographic layers
-			foreach(var layer in hydroGroupLayer.ChildLayers)
+			foreach(var layer in hydroGroupLayer.ChildLayers)		
 				extent = GeometryEngine.Union(extent, layer.FullExtent) as Polygon;
 
 			// Zoom to full extent
 			await mapView.SetViewAsync(extent);
+			
 			// Enable controls
 			displayPropertiesArea.IsEnabled = true;
 		}
@@ -98,5 +99,4 @@ namespace ArcGISRuntimeSDKDotNet_DesktopSamples.Samples.Symbology.AdvancedSymbol
 			return Enum.Parse(targetType, this.targetValue.ToString());
 		}
 	}
-
 }

@@ -6,7 +6,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
 			 xmlns:local="clr-namespace:ArcGISRuntimeSDKDotNet_DesktopSamples.Samples.Symbology.AdvancedSymbology"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="1200" d:DesignWidth="1600">
 	<UserControl.Resources>
 		<local:FlagsEnumValueConverter x:Key="FlagsConverter"/>
 	</UserControl.Resources>
@@ -52,7 +52,7 @@
 						</StackPanel>
 						<!-- Point and Area Symbolization Type -->
 						<StackPanel Orientation="Horizontal" Margin="0,5,0,0">
-							<TextBlock Text="Area:"  Margin="5,0,0,0" Width="80" VerticalAlignment="Center"/>
+							<TextBlock Text="Area:" Margin="5,0,0,0" Width="80" VerticalAlignment="Center"/>
 							<ComboBox ItemsSource="{Binding Source={local:EnumValuesExtension {x:Type esri:S52AreaSymbolizationType}}}"
                                    SelectedItem="{Binding Path=AreaSymbolizationType, Mode=TwoWay}" Width="120" />
 							<TextBlock Text="Point:" Margin="5,0,0,0"  Width="80" VerticalAlignment="Center"/>
