@@ -38,9 +38,9 @@
     <DocumentationFile>Assets\SampleDescriptions.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Esri.ArcGISRuntime, Version=10.2.3.0, Culture=neutral, PublicKeyToken=036c1c3c3d9cf2f5, processorArchitecture=MSIL">
+    <Reference Include="Esri.ArcGISRuntime, Version=10.2.3.0, Culture=neutral, PublicKeyToken=29c6dd6e8553d944, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\applications\output\windesktop_api\bin\Esri.ArcGISRuntime.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\ArcGIS SDKs\DotNet10.2.3\WindowsDesktop\bin\Esri.ArcGISRuntime.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -386,6 +386,9 @@
     <Compile Include="Samples\Security\TokenSecuredServices.xaml.cs">
       <DependentUpon>TokenSecuredServices.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Samples\Symbology\AdvancedSymbology\S57DisplayPropertiesSample.xaml.cs">
+      <DependentUpon>S57DisplayPropertiesSample.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Samples\Symbology\ClassBreaksRendererSample.xaml.cs">
       <DependentUpon>ClassBreaksRendererSample.xaml</DependentUpon>
     </Compile>
@@ -398,13 +401,13 @@
     <Compile Include="Samples\Symbology\MarkerSymbols.xaml.cs">
       <DependentUpon>MarkerSymbols.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Samples\Symbology\MessageProcessingSample.xaml.cs">
+    <Compile Include="Samples\Symbology\AdvancedSymbology\MessageProcessingSample.xaml.cs">
       <DependentUpon>MessageProcessingSample.xaml</DependentUpon>
     </Compile>
     <Compile Include="Samples\Symbology\SimpleRendererSample.xaml.cs">
       <DependentUpon>SimpleRendererSample.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Samples\Symbology\SymbolDictionarySearchSample.xaml.cs">
+    <Compile Include="Samples\Symbology\AdvancedSymbology\SymbolDictionarySearchSample.xaml.cs">
       <DependentUpon>SymbolDictionarySearchSample.xaml</DependentUpon>
     </Compile>
     <Compile Include="Samples\Symbology\TextSymbols.xaml.cs">
@@ -867,6 +870,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Samples\Symbology\AdvancedSymbology\S57DisplayPropertiesSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Samples\Symbology\ClassBreaksRendererSample.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -883,7 +890,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Samples\Symbology\MessageProcessingSample.xaml">
+    <Page Include="Samples\Symbology\AdvancedSymbology\MessageProcessingSample.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -891,7 +898,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Samples\Symbology\SymbolDictionarySearchSample.xaml">
+    <Page Include="Samples\Symbology\AdvancedSymbology\SymbolDictionarySearchSample.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
