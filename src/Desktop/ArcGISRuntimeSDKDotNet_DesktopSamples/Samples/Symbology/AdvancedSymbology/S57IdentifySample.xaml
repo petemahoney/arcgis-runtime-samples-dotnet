@@ -82,14 +82,5 @@
 				</StackPanel>
 			</StackPanel>
 		</Border>
-
-		<!-- Description -->
-		<Border Background="White" BorderBrush="Black" BorderThickness="2" Margin="30"
-                HorizontalAlignment="Right" VerticalAlignment="Top">
-			<StackPanel Margin="30,20">
-				<TextBlock Text="This sample shows how to perform a point-based identify style operation on an HydrographicS57Layer."
-                           FontSize="14"  Width="400" TextAlignment="Left" TextWrapping="Wrap" />
-			</StackPanel>
-		</Border>
 	</Grid>
 </UserControl>

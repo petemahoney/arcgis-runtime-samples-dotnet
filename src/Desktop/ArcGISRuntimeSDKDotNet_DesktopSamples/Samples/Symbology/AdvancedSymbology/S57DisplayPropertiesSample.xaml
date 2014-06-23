@@ -178,14 +178,5 @@
 				</GroupBox>
 			</StackPanel>
 		</Border>
-		
-		<!-- Description -->
-		<Border Background="White" BorderBrush="Black" BorderThickness="2" Margin="30"
-                HorizontalAlignment="Right" VerticalAlignment="Top">
-			<StackPanel Margin="30,20">
-				<TextBlock Text="This sample demonstrates using the global static HydrographicS52DisplayProperties object to control the display properties of an HydrographicS57Layer, such as the Color Scheme or Safety Contour Depth."
-                           FontSize="14"  Width="400" TextAlignment="Left" TextWrapping="Wrap" />
-			</StackPanel>
-		</Border>
 	</Grid>
 </UserControl>

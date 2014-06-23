@@ -386,11 +386,17 @@
     <Compile Include="Samples\Security\TokenSecuredServices.xaml.cs">
       <DependentUpon>TokenSecuredServices.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Samples\Symbology\AdvancedSymbology\S57CellInfoSample.xaml.cs">
+      <DependentUpon>S57CellInfoSample.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Samples\Symbology\AdvancedSymbology\S57DisplayPropertiesSample.xaml.cs">
       <DependentUpon>S57DisplayPropertiesSample.xaml</DependentUpon>
     </Compile>
     <Compile Include="Samples\Symbology\AdvancedSymbology\S57IdentifySample.xaml.cs">
       <DependentUpon>S57IdentifySample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Symbology\AdvancedSymbology\S57SearchSample.xaml.cs">
+      <DependentUpon>S57SearchSample.xaml</DependentUpon>
     </Compile>
     <Compile Include="Samples\Symbology\ClassBreaksRendererSample.xaml.cs">
       <DependentUpon>ClassBreaksRendererSample.xaml</DependentUpon>
@@ -873,11 +879,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Samples\Symbology\AdvancedSymbology\S57CellInfoSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Samples\Symbology\AdvancedSymbology\S57DisplayPropertiesSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Samples\Symbology\AdvancedSymbology\S57IdentifySample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Samples\Symbology\AdvancedSymbology\S57SearchSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

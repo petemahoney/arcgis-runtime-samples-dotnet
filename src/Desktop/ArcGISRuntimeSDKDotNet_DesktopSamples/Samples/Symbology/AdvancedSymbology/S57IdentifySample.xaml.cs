@@ -4,6 +4,7 @@ using Esri.ArcGISRuntime.Layers;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -51,13 +52,14 @@ namespace ArcGISRuntimeSDKDotNet_DesktopSamples.Samples.Symbology.AdvancedSymbol
 
 			// Clear previous results
 			_searchResults.Clear();
-			
+
 			foreach (var layer in _hydrographicLayers.ChildLayers)
 			{
 				var hydroLayer = layer as HydrographicS57Layer;
 
-				// Search feature objects from layer
-				var results = await hydroLayer.SearchAsync(mapView, e.Location);
+				// Identify feature objects from layer
+				var results = await hydroLayer.HitTestAsync(mapView, e.Position, 10, 3);
+			
 
 				// Add results to results list
 				if (results != null && results.Count > 0)
